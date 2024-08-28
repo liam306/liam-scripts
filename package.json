@@ -1,0 +1,24 @@
+{
+  "name": "sc-test",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun src/index.ts",
+    "dev": "bun src/dev.ts",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.3.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "bullmq": "^5.12.11",
+    "ethers": "^6.13.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "web3": "^4.12.1"
+  }
+}
