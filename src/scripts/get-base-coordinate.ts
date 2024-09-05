@@ -12,7 +12,7 @@ Object.values(LandInfo).forEach((curr) => {
       { SettlementType?: string; SettelementName?: string },
     ]) => {
       if (detail?.['SettlementType'] && detail['SettelementName']) {
-        baseCoordinate[detail['SettelementName']] = coor;
+        baseCoordinate[detail['SettelementName'].trim()] = coor;
       }
     },
   );
