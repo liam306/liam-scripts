@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const accessToken = process.env.GF_ADMIN_ACCESS_TOKEN;
-const baseURL = 'https://testnet-admin.goldfever.io';
+const baseURL = process.env.GF_ADMIN_BASE_URL;
 
 export const API = axios.create({
   baseURL,
