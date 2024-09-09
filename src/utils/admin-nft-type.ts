@@ -81,3 +81,16 @@ export const deleteNft = async (id: number) => {
     console.log(error.response.data);
   }
 };
+
+export const bulkDeleteNft = async (ids: number[]) => {
+  try {
+    const { data } = await API.post(
+      '/content-manager/collection-types/plugins::gold-fever.nfttype/actions/bulkDelete',
+      { ids },
+    );
+
+    console.log(data);
+  } catch (error: any) {
+    console.log(error.response.data);
+  }
+};
