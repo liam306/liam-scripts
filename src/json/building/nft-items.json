@@ -1,0 +1,602 @@
+[
+  {
+    "typeId": "181010",
+    "name": "Airfield_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 50000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181011",
+    "name": "Airfield_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 50000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181110",
+    "name": "Bank_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 0,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": false
+  },
+  {
+    "typeId": "181111",
+    "name": "Bank_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 0,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": false
+  },
+  {
+    "typeId": "181210",
+    "name": "Bar_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 15000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181211",
+    "name": "Bar_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 15000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181212",
+    "name": "Bar_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 15000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181310",
+    "name": "Blacksmith_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 25000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181311",
+    "name": "Blacksmith_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 25000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181312",
+    "name": "Blacksmith_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 25000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181410",
+    "name": "ButcherShop_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 15000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181411",
+    "name": "ButcherShop_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 15000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181412",
+    "name": "ButcherShop_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 15000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181510",
+    "name": "Carpentry_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 25000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181511",
+    "name": "Carpentry_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 25000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181512",
+    "name": "Carpentry_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 25000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181610",
+    "name": "Docks_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 40000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181611",
+    "name": "Docks_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 40000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181612",
+    "name": "Docks_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 40000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181710",
+    "name": "Kennels_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 15000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181711",
+    "name": "Kennels_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 15000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181712",
+    "name": "Kennels_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 15000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181713",
+    "name": "Kennels_var4_tier1",
+    "level": 4,
+    "nglPrice": 0,
+    "julPrice": 15000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181714",
+    "name": "Kennels_var5_tier1",
+    "level": 5,
+    "nglPrice": 0,
+    "julPrice": 15000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181810",
+    "name": "DonkeyStable_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 25000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181811",
+    "name": "DonkeyStable_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 25000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181812",
+    "name": "DonkeyStable_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 25000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181910",
+    "name": "FruitMarket_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 10000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181911",
+    "name": "FruitMarket_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 10000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "181912",
+    "name": "FruitMarket_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 10000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182010",
+    "name": "ToolsWorkshop_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 25000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182011",
+    "name": "ToolsWorkshop_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 25000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182110",
+    "name": "HorseStable_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 30000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182111",
+    "name": "HorseStable_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 30000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182112",
+    "name": "HorseStable_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 30000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182210",
+    "name": "Hotel_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 30000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182211",
+    "name": "Hotel_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 30000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182212",
+    "name": "Hotel_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 30000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182310",
+    "name": "SurvivalMarket_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 20000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182311",
+    "name": "SurvivalMarket_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 20000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182312",
+    "name": "SurvivalMarket_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 20000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182410",
+    "name": "Bungalow_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 7000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182411",
+    "name": "Bungalow_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 7000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182412",
+    "name": "Bungalow_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 7000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182413",
+    "name": "Bungalow_var4_tier1",
+    "level": 4,
+    "nglPrice": 0,
+    "julPrice": 7000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182414",
+    "name": "Bungalow_var5_tier1",
+    "level": 5,
+    "nglPrice": 0,
+    "julPrice": 7000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182610",
+    "name": "Hospital_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 0,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": false
+  },
+  {
+    "typeId": "182611",
+    "name": "Hospital_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 0,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": false
+  },
+  {
+    "typeId": "182612",
+    "name": "Hospital_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 0,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": false
+  },
+  {
+    "typeId": "182811",
+    "name": "TailoringWorkshop_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 15000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182910",
+    "name": "InstrumentWorkshop_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 10000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182911",
+    "name": "InstrumentWorkshop_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 10000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "182912",
+    "name": "InstrumentWorkshop_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 10000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "183010",
+    "name": "WeaponWorkshop_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 30000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "183011",
+    "name": "WeaponWorkshop_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 30000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "183012",
+    "name": "WeaponWorkshop_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 30000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "183210",
+    "name": "GovernorsMansion_var1_tier1",
+    "level": 1,
+    "nglPrice": 0,
+    "julPrice": 3000000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "183211",
+    "name": "GovernorsMansion_var2_tier1",
+    "level": 2,
+    "nglPrice": 0,
+    "julPrice": 3000000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "183212",
+    "name": "GovernorsMansion_var3_tier1",
+    "level": 3,
+    "nglPrice": 0,
+    "julPrice": 3000000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  },
+  {
+    "typeId": "183213",
+    "name": "GovernorsMansion_var4_tier1",
+    "level": 4,
+    "nglPrice": 0,
+    "julPrice": 3000000,
+    "description": "",
+    "categoryId": "18",
+    "isPurchasable": true
+  }
+]
