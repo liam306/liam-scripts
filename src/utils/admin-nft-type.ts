@@ -21,6 +21,15 @@ export interface NFTType {
 
 export interface UpdateNFTType extends Partial<NFTType> {}
 
+export interface Pagination {
+  page: number;
+  pageSize: number;
+}
+export const defaultPagination: Pagination = {
+  page: 1,
+  pageSize: 10,
+};
+
 export const renewToken = async () => {
   try {
     const { data } = await API.post('/admin/renew-token', {
@@ -32,13 +41,37 @@ export const renewToken = async () => {
   }
 };
 
+export const getNfts = async (
+  params?: Record<string, string>,
+  pagination: Pagination = defaultPagination,
+  sort: string = 'id:DESC',
+) => {
+  try {
+    const { data } = await API.get(
+      '/content-manager/collection-types/plugins::gold-fever.nfttype',
+      {
+        params: {
+          page: pagination.page,
+          pageSize: pagination.pageSize,
+          _sort: sort,
+          ...params,
+        },
+      },
+    );
+
+    return data;
+  } catch (error: any) {
+    console.log(error.response.data);
+  }
+};
+
 export const getNftById = async (id: number) => {
   try {
     const { data } = await API.get(
       `/content-manager/collection-types/plugins::gold-fever.nfttype/${id}`,
     );
 
-    console.log(data);
+    return data;
   } catch (error: any) {
     console.log(error.response.data);
   }
@@ -51,7 +84,7 @@ export const createNft = async (nftType: NFTType) => {
       nftType,
     );
 
-    console.log(data);
+    return data;
   } catch (error: any) {
     console.log(error.response.data);
   }
@@ -64,7 +97,7 @@ export const updateNft = async (id: number, updateNftType: UpdateNFTType) => {
       updateNftType,
     );
 
-    console.log(data);
+    return data;
   } catch (error: any) {
     console.log(error.response.data);
   }
@@ -76,7 +109,7 @@ export const deleteNft = async (id: number) => {
       `/content-manager/collection-types/plugins::gold-fever.nfttype/${id}`,
     );
 
-    console.log(data);
+    return data;
   } catch (error: any) {
     console.log(error.response.data);
   }
@@ -89,7 +122,7 @@ export const bulkDeleteNft = async (ids: number[]) => {
       { ids },
     );
 
-    console.log(data);
+    return data;
   } catch (error: any) {
     console.log(error.response.data);
   }
