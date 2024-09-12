@@ -1,12 +1,12 @@
 // import fs from 'fs';
 // import path from 'path';
-import items from '../json/items.json';
+import items from '$json/items.json';
 import {
   bulkDeleteNft,
   createNft,
   getNfts,
   type NFTType,
-} from '../utils/admin-nft-type';
+} from '$utils/admin-nft-type';
 
 const buildingPrice: Record<string, number> = {
   '121410': 750,

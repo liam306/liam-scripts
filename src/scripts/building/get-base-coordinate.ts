@@ -1,6 +1,6 @@
+import LandInfo from '$json/building/land-info.json';
 import fs from 'fs';
 import path from 'path';
-import LandInfo from '../json/building/land-info.json';
 
 const baseCoordinate = {} as Record<string, string>;
 
@@ -19,7 +19,7 @@ Object.values(LandInfo).forEach((curr) => {
 });
 
 // fs.writeFileSync(
-//   path.join(__dirname, '../json/building/base-coordinate.json'),
+//   path.join(__dirname, '../../json/building/base-coordinate.json'),
 //   JSON.stringify(baseCoordinate, null, 2),
 // );
 
@@ -31,7 +31,7 @@ const baseCoordinateEnum = Object.entries(baseCoordinate)
   .join('\n');
 
 fs.writeFileSync(
-  path.join(__dirname, '../enum/building/base-coordinate.ts'),
+  path.join(__dirname, '../../enum/building/base-coordinate.ts'),
   `export const BaseCoordinate = {${baseCoordinateEnum}}`,
 );
 
@@ -42,6 +42,6 @@ fs.writeFileSync(
 //   .join('\n');
 
 // fs.writeFileSync(
-//   path.join(__dirname, '../enum/building/base-name.ts'),
+//   path.join(__dirname, '../../enum/building/base-name.ts'),
 //   `export enum EBaseName {${baseNameEnum}}`,
 // );
