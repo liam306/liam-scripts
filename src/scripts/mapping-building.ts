@@ -23,7 +23,19 @@ const buildingMapping = buildingWithBase
     {},
   );
 
+// fs.writeFileSync(
+//   path.join(__dirname, '../json/building/new-building-mapping-base.json'),
+//   JSON.stringify(buildingMapping, null, 2),
+// );
+
+const buildingMappingEnum = Object.entries(buildingMapping)
+  .map(
+    ([key, value]) =>
+      `"${key}": EBaseName["${value.split(' ').join('_').toUpperCase()}"],`,
+  )
+  .join('\n');
+
 fs.writeFileSync(
-  path.join(__dirname, '../json/building/new-building-mapping-base.json'),
-  JSON.stringify(buildingMapping, null, 2),
+  path.join(__dirname, '../json/building/new-building-mapping-base.enum.ts'),
+  `export const BuildingMappingBase = {${buildingMappingEnum}}`,
 );
