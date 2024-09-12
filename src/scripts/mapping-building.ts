@@ -36,6 +36,6 @@ const buildingMappingEnum = Object.entries(buildingMapping)
   .join('\n');
 
 fs.writeFileSync(
-  path.join(__dirname, '../enum/building/new-building-mapping-base.ts'),
+  path.join(__dirname, '../constants/building/new-building-mapping-base.ts'),
   `export const BuildingMappingBase = {${buildingMappingEnum}}`,
 );
