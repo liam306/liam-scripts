@@ -1,4 +1,4 @@
-import { EBaseName } from './base-name.enum';
+import { EBaseName } from './base-name';
 
 export const BaseCoordinate: Record<EBaseName, string> = {
   [EBaseName['LUMBERTON']]: 'A5D6',

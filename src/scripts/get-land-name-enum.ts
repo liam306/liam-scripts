@@ -11,6 +11,6 @@ const landNameEnum = landNames
   .join('\n');
 
 fs.writeFileSync(
-  path.join(__dirname, '../json/building/land-name.enum.ts'),
+  path.join(__dirname, '../enum/building/land-name.ts'),
   `export enum ELandName {${landNameEnum}}`,
 );

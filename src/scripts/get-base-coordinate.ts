@@ -31,7 +31,7 @@ const baseCoordinateEnum = Object.entries(baseCoordinate)
   .join('\n');
 
 fs.writeFileSync(
-  path.join(__dirname, '../json/building/base-coordinate.enum.ts'),
+  path.join(__dirname, '../enum/building/base-coordinate.ts'),
   `export const BaseCoordinate = {${baseCoordinateEnum}}`,
 );
 
@@ -42,6 +42,6 @@ fs.writeFileSync(
 //   .join('\n');
 
 // fs.writeFileSync(
-//   path.join(__dirname, '../json/building/base-name.enum.ts'),
+//   path.join(__dirname, '../enum/building/base-name.ts'),
 //   `export enum EBaseName {${baseNameEnum}}`,
 // );
