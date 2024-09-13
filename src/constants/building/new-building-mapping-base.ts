@@ -1,4 +1,4 @@
-import { EBaseName } from '../enum/base-name';
+import { EBaseName } from '../../enum/base-name';
 
 export const BuildingMappingBase: Record<string, EBaseName> = {
   '29249777': EBaseName['ACOMB'],
