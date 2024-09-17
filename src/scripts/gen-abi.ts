@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
-import gfBridgeSubnetAbi from '../abi/typescript/gf-bridge-subnet';
-import gfBridgeERC20Abi from '../abi/typescript/gf-bridge-erc20';
+import gfBridgeERC20Abi from '../contracts/abi/typescript/gf-bridge-erc20';
+import gfBridgeSubnetAbi from '../contracts/abi/typescript/gf-bridge-subnet';
 
 fs.writeFileSync(
   path.resolve(__dirname, '../abi/bridge/subnet-bridge.json'),

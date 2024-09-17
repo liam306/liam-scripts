@@ -1,7 +1,7 @@
 import { ethers } from 'ethers';
-import cChainBridgeContractAbi from '../abi/bridge/erc20-bridge.json';
-import subnetBridgeContractAbi from '../abi/bridge/subnet-bridge.json';
-import nglAbi from '../abi/ngl/NGL.json';
+import cChainBridgeContractAbi from '../contracts/abi/bridge/erc20-bridge.json';
+import subnetBridgeContractAbi from '../contracts/abi/bridge/subnet-bridge.json';
+import nglAbi from '../contracts/abi/ngl/NGL.json';
 
 (async () => {
   const cChainRpcUrl = 'https://api.avax-test.network/ext/bc/C/rpc';
