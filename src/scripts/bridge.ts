@@ -1,36 +1,33 @@
+import { CONTRACT_ADDRESS } from '$constants/contract/address';
+import { WALLET_PRIVATE_KEY } from '$constants/wallet';
+import { C_CHAIN_PROVIDER, SUBNET_PROVIDER } from '$utils/ethers';
 import { ethers } from 'ethers';
 import cChainBridgeContractAbi from '../contracts/abi/bridge/erc20-bridge.json';
 import subnetBridgeContractAbi from '../contracts/abi/bridge/subnet-bridge.json';
 import nglAbi from '../contracts/abi/ngl/NGL.json';
 
 (async () => {
-  const cChainRpcUrl = 'https://api.avax-test.network/ext/bc/C/rpc';
-  const subnetRpcUrl = 'https://subnets.avax.network/highoctane/mainnet/rpc';
-  const cChainProvider = new ethers.JsonRpcProvider(cChainRpcUrl);
-  const subnetProvider = new ethers.JsonRpcProvider(subnetRpcUrl);
-  const userPrivateKey = 'xxx';
-  const userWalletCChain = new ethers.Wallet(userPrivateKey, cChainProvider);
-  const userWalletSubnet = new ethers.Wallet(userPrivateKey, subnetProvider);
-
-  const nglAddressCChain = '0x3ab9fB836A53a536aB9e555b193387E231Ecc57A';
-  const cChainBridgeContractAddress =
-    '0xD5200b1E606332BdAbA94fC9ABb48f47BA1f9B64';
-  const subnetBridgeContractAddress =
-    '0x62AfA04e8afD367c6214b727481e54B51eE76FFa';
-  const nglAddressSubnet = '0xcca78771F969381401DB7f2d310067464B411B3e';
+  const userWalletCChain = new ethers.Wallet(
+    WALLET_PRIVATE_KEY.tan3006,
+    C_CHAIN_PROVIDER,
+  );
+  const userWalletSubnet = new ethers.Wallet(
+    WALLET_PRIVATE_KEY.tan3006,
+    SUBNET_PROVIDER,
+  );
 
   const nglContractCChain = new ethers.Contract(
-    nglAddressCChain,
+    CONTRACT_ADDRESS.C_CHAIN_NGL,
     nglAbi,
     userWalletCChain,
   );
   const cChainBridgeContract = new ethers.Contract(
-    cChainBridgeContractAddress,
+    CONTRACT_ADDRESS.C_CHAIN_BRIDGE,
     cChainBridgeContractAbi,
     userWalletCChain,
   );
   const nglContractSubnet = new ethers.Contract(
-    nglAddressSubnet,
+    CONTRACT_ADDRESS.SUBNET_NGL,
     nglAbi,
     userWalletSubnet,
   );
@@ -44,7 +41,7 @@ import nglAbi from '../contracts/abi/ngl/NGL.json';
 
   // // approve bridge contract to spend ngl
   // const approveTx = await nglContractCChain.approve(
-  //   cChainBridgeContractAddress,
+  //   GF_CONTRACT_ADDRESS.C_CHAIN_BRIDGE,
   //   ethers.parseEther("1000000")
   // );
   // console.log("approveTx", approveTx.hash);
@@ -59,13 +56,13 @@ import nglAbi from '../contracts/abi/ngl/NGL.json';
 
   // bridge ngl from subnet to c-chain
   const subnetBridgeContract = new ethers.Contract(
-    subnetBridgeContractAddress,
+    CONTRACT_ADDRESS.SUBNET_BRIDGE,
     subnetBridgeContractAbi,
     userWalletSubnet,
   );
 
   // const approveTx = await nglContractSubnet.approve(
-  //   subnetBridgeContractAddress,
+  //   GF_CONTRACT_ADDRESS.SUBNET_BRIDGE,
   //   ethers.parseEther("1000000")
   // );
   // console.log("approveTx", approveTx.hash);
