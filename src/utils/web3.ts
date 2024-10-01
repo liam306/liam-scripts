@@ -4,7 +4,7 @@ import {
   ETH_RPC,
   POLYGON_RPC,
   SUBNET_RPC,
-} from '$constants/contract';
+} from '$constants/rpc';
 import Web3 from 'web3';
 
 export const web3Subnet = new Web3(SUBNET_RPC);

@@ -4,7 +4,7 @@ import {
   ETH_RPC,
   POLYGON_RPC,
   SUBNET_RPC,
-} from '$constants/contract';
+} from '$constants/rpc';
 import { ethers } from 'ethers';
 
 export const C_CHAIN_PROVIDER = new ethers.JsonRpcProvider(C_CHAIN_RPC);

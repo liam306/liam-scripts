@@ -1,4 +1,4 @@
-import { CONTRACT_ADDRESS } from '$constants/contract';
+import { CONTRACT_ADDRESS } from '$constants/contract-address';
 import { WALLET_ADDRESS, WALLET_PRIVATE_KEY } from '$constants/wallet';
 import GFIAbi from '$contracts/abi/gfi/gfi.json';
 import type { Gfi } from '$contracts/types/ethers';

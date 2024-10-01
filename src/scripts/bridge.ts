@@ -1,4 +1,4 @@
-import { CONTRACT_ADDRESS } from '$constants/contract';
+import { CONTRACT_ADDRESS } from '$constants/contract-address';
 import { WALLET_PRIVATE_KEY } from '$constants/wallet';
 import { C_CHAIN_PROVIDER, SUBNET_PROVIDER } from '$utils/ethers';
 import { ethers } from 'ethers';
