@@ -2,7 +2,9 @@
 /* tslint:disable */
 /* eslint-disable */
 export * as factories from './factories';
+export { Gfi__factory } from './factories/Gfi__factory';
 export { NGL__factory } from './factories/NGL__factory';
 export { StakingBuilding__factory } from './factories/StakingBuilding__factory';
+export type { Gfi } from './Gfi';
 export type { NGL } from './NGL';
 export type { StakingBuilding } from './StakingBuilding';

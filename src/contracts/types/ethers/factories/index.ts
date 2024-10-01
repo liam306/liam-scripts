@@ -3,3 +3,4 @@
 /* eslint-disable */
 export { NGL__factory } from './NGL__factory';
 export { StakingBuilding__factory } from './StakingBuilding__factory';
+export { Gfi__factory } from './Gfi__factory';
