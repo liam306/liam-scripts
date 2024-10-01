@@ -1,25 +1,25 @@
+import { CONTRACT_ADDRESS } from '$constants/contract/address';
+import { WALLET_PRIVATE_KEY } from '$constants/wallet';
+import { SUBNET_PROVIDER } from '$utils/ethers';
 import { ethers } from 'ethers';
 import nglContractAbi from '../contracts/abi/ngl/NGL.json';
 import stakingBuildingContractAbi from '../contracts/abi/stake/staking-building.json';
 import type { NGL, StakingBuilding } from '../contracts/types/ethers';
 
 (async () => {
-  const rpcUrl = process.env.SUBNET_RPC;
-  const provider = new ethers.JsonRpcProvider(rpcUrl);
+  const adminWallet = new ethers.Wallet(
+    WALLET_PRIVATE_KEY.store,
+    SUBNET_PROVIDER,
+  );
 
-  const adminWalletPk = process.env.ADMIN_WALLET_PRIVATE_KEY;
-  const adminWallet = new ethers.Wallet(adminWalletPk!, provider);
-
-  const stakingContractAddress = '0x29e25665157C6aef500c11D0bC3F97dcC6CAB3E1';
   const stakingBuildingContract = new ethers.Contract(
-    stakingContractAddress,
+    CONTRACT_ADDRESS.SUBNET_STAKING_BUILDING,
     stakingBuildingContractAbi,
     adminWallet,
   ) as unknown as StakingBuilding;
 
-  const nglContractAddress = '0xcca78771F969381401DB7f2d310067464B411B3e';
   const nglContract = new ethers.Contract(
-    nglContractAddress,
+    CONTRACT_ADDRESS.SUBNET_NGL,
     nglContractAbi,
     adminWallet,
   ) as unknown as NGL;
@@ -27,12 +27,12 @@ import type { NGL, StakingBuilding } from '../contracts/types/ethers';
   // approve NGL
   const allowance = await nglContract.allowance(
     adminWallet.address,
-    stakingContractAddress,
+    CONTRACT_ADDRESS.SUBNET_STAKING_BUILDING,
   );
 
   if (+ethers.formatEther(allowance) < 100000000000000) {
     const approveTx = await nglContract.approve(
-      stakingContractAddress,
+      CONTRACT_ADDRESS.SUBNET_STAKING_BUILDING,
       ethers.MaxUint256,
     );
     approveTx.wait();
