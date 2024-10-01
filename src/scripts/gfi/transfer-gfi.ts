@@ -1,13 +1,17 @@
 import { CONTRACT_ADDRESS } from '$constants/contract-address';
-import { WALLET_ADDRESS, WALLET_PRIVATE_KEY } from '$constants/wallet';
+import {
+  WALLET_ADDRESS,
+  WALLET_PRIVATE_KEY,
+  type WalletName,
+} from '$constants/wallet';
 import GFIAbi from '$contracts/abi/gfi/gfi.json';
 import type { Gfi } from '$contracts/types/ethers';
 import { SUBNET_PROVIDER } from '$utils/ethers';
 import { ethers } from 'ethers';
 
 const transferGFIItem = async (
-  fromUser: keyof typeof WALLET_PRIVATE_KEY,
-  toUser: keyof typeof WALLET_ADDRESS,
+  fromUser: WalletName,
+  toUser: WalletName,
   tokenId: string,
 ) => {
   const fromUserWallet = new ethers.Wallet(

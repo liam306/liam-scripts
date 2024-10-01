@@ -1,4 +1,11 @@
-export const WALLET_PRIVATE_KEY = {
+export type WalletName =
+  | 'admin'
+  | 'store'
+  | 'logarithmik'
+  | 'tan3006'
+  | 'tan_01';
+
+export const WALLET_PRIVATE_KEY: Record<WalletName, string> = {
   admin: process.env.ADMIN_WALLET_PRIVATE_KEY!,
   store: process.env.STORE_WALLET_PRIVATE_KEY!,
 
@@ -7,7 +14,7 @@ export const WALLET_PRIVATE_KEY = {
   tan_01: process.env.TAN_01_WALLET_PRIVATE_KEY!,
 };
 
-export const WALLET_ADDRESS = {
+export const WALLET_ADDRESS: Record<WalletName, string> = {
   admin: '0x9999797Ba1FC61bF928f1e0319c35A484780696e',
   store: '0x33336cC48c8e8B428776c4cf943F04512262B540',
 
