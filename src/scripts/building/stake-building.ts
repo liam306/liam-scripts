@@ -1,10 +1,10 @@
 import { CONTRACT_ADDRESS } from '$constants/contract-address';
 import { WALLET_PRIVATE_KEY } from '$constants/wallet';
+import nglContractAbi from '$contracts/abi/ngl/NGL.json';
+import stakingBuildingContractAbi from '$contracts/abi/stake/staking-building.json';
+import type { NGL, StakingBuilding } from '$contracts/types/ethers';
 import { SUBNET_PROVIDER } from '$utils/ethers';
 import { ethers } from 'ethers';
-import nglContractAbi from '../contracts/abi/ngl/NGL.json';
-import stakingBuildingContractAbi from '../contracts/abi/stake/staking-building.json';
-import type { NGL, StakingBuilding } from '../contracts/types/ethers';
 
 (async () => {
   const adminWallet = new ethers.Wallet(

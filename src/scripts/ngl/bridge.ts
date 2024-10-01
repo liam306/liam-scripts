@@ -1,10 +1,10 @@
 import { CONTRACT_ADDRESS } from '$constants/contract-address';
 import { WALLET_PRIVATE_KEY } from '$constants/wallet';
+import cChainBridgeContractAbi from '$contracts/abi/bridge/erc20-bridge.json';
+import subnetBridgeContractAbi from '$contracts/abi/bridge/subnet-bridge.json';
+import nglAbi from '$contracts/abi/ngl/NGL.json';
 import { C_CHAIN_PROVIDER, SUBNET_PROVIDER } from '$utils/ethers';
 import { ethers } from 'ethers';
-import cChainBridgeContractAbi from '../contracts/abi/bridge/erc20-bridge.json';
-import subnetBridgeContractAbi from '../contracts/abi/bridge/subnet-bridge.json';
-import nglAbi from '../contracts/abi/ngl/NGL.json';
 
 (async () => {
   const userWalletCChain = new ethers.Wallet(

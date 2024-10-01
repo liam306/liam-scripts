@@ -32,4 +32,4 @@ const transferGFIItem = async (
   }
 };
 
-transferGFIItem('tan3006', 'tan_01', '0x129ccb1');
+transferGFIItem('tan3006', 'tan_01', '0x102c4a21');
